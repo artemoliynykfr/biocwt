@@ -1,0 +1,115 @@
+.section {
+   &__question {
+      padding: 50px 0 169px;
+      @media (max-width: 600px) {
+         padding: 0 0 93px;
+      }
+   }
+}
+.question {
+   position: relative;
+   &__title {
+      text-align: right;
+      margin-bottom: 42px;
+      @media (max-width: 600px) {
+         text-align: left;
+         margin-bottom: 11px;
+      }
+   }
+   &__container {
+      display: flex;
+      @media (max-width: 992px) {
+         flex-direction: column-reverse;
+      }
+   }
+   &__form {
+      max-width: 598px;
+      width: 100%;
+      margin-right: 64px;
+      @media (max-width: 1110px) {
+         margin-right: 24px;
+      }
+      @media (max-width: 992px) {
+         margin-right: 0;
+         max-width: 100%;
+      }
+   }
+   &__form-input {
+      width: 100%;
+      border: 4px solid #728bad;
+      border-radius: 42px;
+      padding: 18px 47px;
+      background: none;
+      color: #d9d9d982;
+      margin-bottom: 23px;
+      transition: all .3s ease;
+      @media (max-width: 1110px) {
+         padding: 14px 30px;
+      }
+      @media (max-width: 600px) {
+         margin-bottom: 12px;
+         border-radius: 14px;
+         padding: 11px 19px;
+      }
+      @media (max-width: 480px) {
+         border: 2px solid #728bad;
+      }
+      &::placeholder {
+         color: #d9d9d982;
+      }
+      &:focus-visible {
+         background: rgba(213, 220, 238, 0.9);
+         border: 4px solid #6c200b;
+         transition: all .3s ease;
+         color: #32353C;
+         &::placeholder{
+            color: #32353C;
+         }
+      }
+      &.invalid{
+         border: 4px solid #6c200b;
+      }
+   }
+   &__form-textarea {
+      height: 257px;
+      resize: none;
+      margin-bottom: 40px;
+      @media (max-width: 600px) {
+         margin-bottom: 23px;
+         height: 134px;
+      }
+   }
+   &__form-btn {
+      border: none;
+      cursor: pointer;
+      @media (max-width: 480px) {
+         padding: 5px 28px;
+      }
+   }
+   &__content {
+      max-width: 546px;
+      width: 100%;
+      @media (max-width: 768px) {
+         max-width: 380px;
+      }
+      @media (max-width: 480px) {
+         max-width: 272px;
+      }
+   }
+   &__text {
+      text-align: right;
+      @media (max-width: 992px) {
+         text-align: left;
+         margin-bottom: 46px;
+      }
+   }
+   &__img {
+      transform: rotate(-27.13deg);
+      position: absolute;
+      top: 409px;
+      z-index: -1;
+      @media (max-width: 992px) {
+         display: none;
+      }
+   }
+}
